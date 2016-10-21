@@ -1,5 +1,5 @@
 ---
-# tasks file for pip
+# tasks for pip
 - name: Add epel
   package:
     name=epel-release
