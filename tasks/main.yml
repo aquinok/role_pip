@@ -1,0 +1,11 @@
+---
+# tasks file for pip
+- name: Add epel
+  package:
+    name=epel-release
+  when: ansible_os_family == "RedHat"
+
+- name: Install python-pip
+  package:
+    name=python-pip
+    state=latest
